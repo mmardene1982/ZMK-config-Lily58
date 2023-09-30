@@ -10,6 +10,16 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        snippet {
+            bindings = <&kp LS(LG(NUMBER_4))>;
+            key-positions = <0 11>;
+            layers = <0 1 2>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
